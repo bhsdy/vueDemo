@@ -3,7 +3,7 @@ const chalk = require('chalk')
 const semver = require('semver')
 const packageConfig = require('../package.json')
 const shell = require('shelljs')
-
+//这块儿不太熟，大致意思是用js代码同步执行一个cmd的命令，并且对返回的结果执行toString（）和trim()方法
 function exec (cmd) {
   return require('child_process').execSync(cmd).toString().trim()
 }
